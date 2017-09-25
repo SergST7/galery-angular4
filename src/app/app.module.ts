@@ -7,18 +7,23 @@ import { GaleryComponent } from './galery/galery.component';
 import { ImageComponent } from './image/image.component';
 
 import {ImageService} from "./shared/image.service";
+import { FilterPipe } from './shared/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     GaleryComponent,
-    ImageComponent
+    ImageComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule
   ],
-  providers: [ImageService],
+  providers: [
+    FilterPipe,
+    ImageService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
