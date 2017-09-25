@@ -9,11 +9,11 @@ import {ImageService} from "../shared/image.service";
 export class GaleryComponent implements OnInit {
 
   images:any[] = [];
+  filterBy?:string = 'all';
 
   constructor(private _imageService:ImageService ) {
     this.images = this._imageService.getImages()
   }
-
 
   ngOnInit() {
   }
