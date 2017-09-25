@@ -1,3 +1,10 @@
-<p>
-  galery works!
-</p>
+<div class="row">
+  <h2>Fotos</h2>
+  <ul class="thumbnails">
+    <li *ngFor="let image of images">
+      <a href="#">
+        <img src="{{ image.url }} " class="tn" height="150">
+      </a>
+    </li>
+  </ul>
+</div>
